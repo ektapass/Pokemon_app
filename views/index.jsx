@@ -9,7 +9,8 @@ const myStyle = {
     render(){
       const pokemon = this.props
     return (
-      <div style={myStyle}>See All The Pokemon!
+      <div> 
+        <h1 style={myStyle}>See All The Pokemon!</h1>
         <ul>
         {allPokemon.map((pokemon,i)=>{
           return(
