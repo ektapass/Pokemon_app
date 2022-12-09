@@ -1,5 +1,5 @@
 const React = require('react');
-const allPokemon = require('../models/pokemon');
+//const allPokemon = require('../models/pokemon');
 const myStyle = {
     color: '#ffffff',
     backgroundColor: '#000000',
@@ -7,15 +7,15 @@ const myStyle = {
 
   class Index extends React.Component {
     render(){
-      const pokemon = this.props
+      const {pokemon} = this.props
     return (
       <div> 
         <h1 style={myStyle}>See All The Pokemon!</h1>
         <ul>
-        {allPokemon.map((pokemon,i)=>{
+        {pokemon.map((pokemon,i)=>{
           return(
      <li>
-      <a href={`/pokemon/${i}`}>{pokemon.name.charAt(0).toUpperCase()+ pokemon.name.slice(1)}</a>
+      <a href={`/pokemon/${pokemon.id}`}>{pokemon.name.charAt(0).toUpperCase()+pokemon.name.slice(1)}</a>
       
  </li>
           );
@@ -30,3 +30,7 @@ const myStyle = {
 }
   
   module.exports  = Index
+
+
+
+
