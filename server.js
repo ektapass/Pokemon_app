@@ -75,31 +75,3 @@ app.get('/pokemon/:id', (req, res) => {
 
 
 
-// app.use((req, res, next) => {
-//   console.log('I run for all routes')
-//   next()
-// })
-
-// app.use(express.urlencoded({extended:false}))
-
-// app.set('view engine', 'jsx')
-// app.engine('jsx', require('express-react-views').createEngine())
-// mongoose.set('strictQuery', true);
-
-// // Setting up Mongoose
-// mongoose.connect(process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
-
-// mongoose.connection.once('open', ()=> {
-//   console.log('connected to mongo')
-// })
-// mongoose.set('strictQuery', true)
-
-
-
-// mkdir intro_to_mongoose
-// cd intro_to_mongoose
-// touch app.js
-// npm init -yand go through the prompts
-// npm i mongoose dotenv
-// touch tweet.js .gitignore .env
-// code .
